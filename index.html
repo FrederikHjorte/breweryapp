@@ -8,12 +8,50 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <div id="container" class="container">
+
+    <!--Hero-->
+    <div class="container col-xxl-8 px-4 py-5" style="margin-bottom: 100px">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="bundle_6_headliners_cans.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-4">Brewdog's beer catalog</h1>
+          <p class="lead">This is a site that simply fetches <b>https://punkapi.com/documentation/v2</b> to showcase the beer catalog of the brewery called Brewdog. <br>All just for the sake of doing some DOM manipulation and experimenting with javascript.</p>
+         
+        </div>
+      </div>
+    </div>
+
+
+    <!--Container with all beers-->
+    <div id="container" class="container" style="margin-bottom: 100px">
         <div id="itemswrapper" class="row">
             
         </div>
     </div>
+
+    <!--Modal to show info about single beer - hidden as default-->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body"  id="modalBody">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       
 
 
 
